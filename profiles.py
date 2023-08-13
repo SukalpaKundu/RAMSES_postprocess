@@ -157,9 +157,9 @@ class simulation_ramses:
             
         
             if(component=="star"):
-                mm,xx,yy,zz,vx,vy,vz              = self._load_snap(folder,verbose=False,component='star')
+                xx,yy,zz,vx,vy,vz,mm              = self._load_snap(folder,verbose=False,component='star')
             elif(component=="DM"):
-                mm,xx,yy,zz,vx,vy,vz              = self._load_snap(folder,verbose=False,component='DM')
+                xx,yy,zz,vx,vy,vz,mm              = self._load_snap(folder,verbose=False,component='DM')
             elif(component=="gas"):
                 xx,yy,zz,vx,vy,vz,dd,PP,TT,mm,cs  = self._load_snap(folder,verbose=False,component='gas')
             else:
